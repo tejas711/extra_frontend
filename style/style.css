@@ -1,0 +1,158 @@
+.Container {
+    background-color: black;
+    color: white;
+    height: 80px;
+    position: relative;
+    display: flex;
+    gap:2%;
+    /* justify-content:space-evenly; */
+    align-items: center;
+    /* border-bottom: 1px solid white; */
+    /* border-style: dashed; */
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
+ .heading {
+ 
+   width:10vw;
+   font-size: 30px;
+   padding: 1%;
+   color: #80accf;
+   display: flex;
+   margin-left: 2%;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer; 
+   
+}
+.images{
+    width: 100%;
+    height: inherit;
+
+}
+
+.heading:hover{
+    color: brown;
+}
+
+.input {
+    border:1px solid rgb(138, 138, 158);
+    margin-left: 25%;
+    height: 35px;
+    width:40vw;
+    
+    border-radius: 10%;
+    background-color: rgb(28, 27, 27);
+    
+    border-radius: 40px;
+    
+    color:white;
+    
+   
+}
+input:hover{
+    background-color: rgb(77, 89, 94);
+
+border: none;
+color: black;
+}
+
+.btn-1{
+    border:1px solid red;
+    margin-left: 15%;
+    background: black;
+    color: rgb(180, 176, 176);
+    border: none;
+    font-size: 20px;
+    
+    cursor: pointer; 
+}
+.btn-1:hover{
+    color:greenyellow;
+    text-decoration: underline;
+}
+.search-btn1{
+    height:30px;
+    width:30px;
+    margin-left:5.5%;
+}
+.com-btn{
+    
+    margin-left:1%;
+   
+    color:rgb(180, 176, 176);
+}
+.btn-2{
+   color: rgb(180, 176, 176);
+    border: none;
+    font-style: inherit;
+    font-size: 20px;
+    margin-left: 1%;
+    cursor: pointer; 
+}
+.input1{
+    border:1px solid rgb(138, 138, 158);
+    margin-left: 20%;
+    height: 35px;
+    width:40vw;
+    
+    border-radius: 10%;
+    background-color: rgb(28, 27, 27);
+    
+    border-radius: 40px;
+    
+    color:white;  
+}
+.search-btn{
+    height:30px;
+    width:30px;
+    margin-left: 3.5%;
+}
+.btn-3{
+    
+    margin-left: 4%;
+    background: black;
+    color: rgb(180, 176, 176);
+    border: none;
+    font-size: 20px;
+    
+    cursor: pointer; 
+}
+.btn-2:hover{
+    color:green;
+    text-decoration: underline;
+}
+.btn-3:hover{
+    color:blue;
+    text-decoration: underline;
+}
+.btn-4{
+   
+    margin-left: 1%;
+    background: black;
+    color: rgb(180, 176, 176);
+    border: none;
+    font-size: 20px;
+    
+    cursor: pointer; 
+}
+.btn-4:hover{
+    color:rgb(0, 255, 13);
+    text-decoration: underline;
+}
+.btn-5{
+   
+    margin-left: 0.5%;
+    background: black;
+    color:red;
+    border: none;
+    font-size: 20px;
+    
+    cursor: pointer; 
+}
+.btn-5:hover{
+    
+    text-decoration: underline;
+}

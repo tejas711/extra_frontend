@@ -1,0 +1,53 @@
+#delete-main{
+    display: flex;
+    width: 49%;
+    height: 100vh;
+    position: fixed;
+    left: 51%;
+    top:10.6%;
+    flex-direction: column;
+    gap: 3%;
+  
+}
+#photo{
+   
+    height: 27%;
+    width: 100%;
+    
+}
+#photo img{
+    height: 100%;
+    width:100%;
+
+}
+#photo-name{
+    width: 100%;
+    height: 10%;
+    border-bottom: 1px solid grey;
+ 
+}
+#photo-desc{
+    width: 100%;
+    height: 25%;
+    border-bottom: 1px solid grey;
+    
+}
+#photo-btns{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    border-bottom: 1px solid grey;
+
+    
+}
+#photo-btns button{
+    height:55px;
+    width: 150px;
+    background-color: rgb(201, 84, 84);
+    border-radius: 25%;
+    font-size: 16px;
+}
