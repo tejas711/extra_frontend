@@ -8,9 +8,10 @@
     /* border-right: 1px solid white; */
     display:flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: flex-start;
     width: 100%;
     flex-wrap: wrap;
+    margin-bottom: 25%;
     /* background-color: rgb(236, 183, 183); */
     
 }

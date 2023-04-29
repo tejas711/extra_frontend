@@ -62,16 +62,17 @@ const Upload = ({ setOpen }) => {
     const handleUpload = (e)=>{
 
         const newToken = localStorage.getItem("mytoken")
+        console.log(inputs)
+        axios.post("http://localhost:8080/upload", {...inputs, newToken})
+  .then((res) => {
+    window.alert("video uploaded successfully")
+    setOpen(false)
+  })
+  .catch((err) => {
+    console.log(err.response.data.error)
+    window.alert("something went wrong")
+  })
 
-        axios.post("https://backend-5.onrender.com/upload",{...inputs,newToken})
-        .then((res)=>{
-            window.alert("video uploaded sucesfully")
-            setOpen(false)
-        }).catch((err)=>{
-            console.log(err)
-            window.alert("something went wrong")
- 
-        })
 
       }
 
@@ -109,6 +110,7 @@ const Upload = ({ setOpen }) => {
                 <div className="div-container">
                     <label htmlFor="">Visibility</label><br />
                     <select name="visibility" id="Public" onChange={handleChange}>
+                        <option >Visibility</option>
                         <option value="Public">Public</option>
                         <option value="Private">Private</option>
                     </select>

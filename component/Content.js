@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Card from "./Card";
 import "../style/content.css"
 import axios from "axios";
+//https://today-zvim.onrender.com
+// https://backserver1.onrender.com
 const Content = () => {
     const [banner, setBanner] = useState("");
     const [name, setName] = useState("View all");
@@ -9,7 +11,7 @@ const Content = () => {
     const [data, setData] = useState([]);
 
     useEffect(() => {
-        axios.get("https://backend-5.onrender.com/home")
+        axios.get("http://localhost:8080/home")
             .then((res) => {
                 setData(res.data)
             }).catch((err) => {

@@ -13,10 +13,10 @@ function SingIn() {
 
     const loginuser = async (e) => {
         e.preventDefault();
-        axios.post("https://backend-5.onrender.com/signin", { email, password })
+        axios.post("http://localhost:8080/signin", { email, password })
             .then((res) => {
                 console.log(res.data.data);
-                localStorage.setItem("ranjit", "mera name")
+                localStorage.setItem("shweta", "myproject")
                 localStorage.setItem("mytoken", res.data.data);
                 window.alert("login sucesfull")
                 navigate1("/");
@@ -29,7 +29,7 @@ function SingIn() {
     return (<>
         <main>
             <section className="sec-first">
-                <img src="https://img.buzzfeed.com/buzzfeed-static/static/2022-05/6/11/campaign_images/9615c13b38f0/the-47-best-mother-son-movies-to-watch-on-mothers-2-1448-1651836261-30_dblbig.jpg?resize=1200:*" alt="" />
+                <img src="https://img.freepik.com/free-photo/member-log-membership-username-password-concept_53876-101281.jpg?size=626&ext=jpg&ga=GA1.2.1784583415.1682756451&semt=robertav1_2_sidr" alt="" />
                 <div className='logo'>
                     <h1 >Tuner</h1>
                     <div >Enjoy Multiple videos at one place</div>

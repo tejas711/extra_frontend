@@ -1,5 +1,5 @@
 body{
-   background-color:rgb(21, 21, 37);
+   background-color:#060c11;
       
      color: white;
      margin: 0;
@@ -86,8 +86,9 @@ body{
  
  
  .videos{
+   margin: 20px;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 3vh;

@@ -3,6 +3,8 @@ import { useNavigate } from "react-router-dom"
 import { useState,useEffect } from "react"
 import Upload from "./Upload";
 import axios from "axios";
+// https://backend-5.onrender.com/logout
+// https://one0x-vsp-xddd.onrender.com   //main(no database connect)
 
 
 function Navbar() {
@@ -29,7 +31,8 @@ function Navbar() {
 
    const handleSignout=async ()=>{
     const newToken=localStorage.getItem("mytoken")
-    axios.post("https://backend-5.onrender.com/logout",{newToken})
+    console.log(newToken)
+    axios.post("http://localhost:8080/logout",{newToken})
         .then((res)=>{
           if(res.status==200){
             window.alert("logout sucessfully")

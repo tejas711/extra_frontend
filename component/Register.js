@@ -17,7 +17,7 @@ const Register = () => {
     const Postdata = async (e) => {
         e.preventDefault();
         const { name, email, phone, profession, password, cpassword } = user;
-        const res = await fetch("https://backend-5.onrender.com/register", {
+        const res = await fetch("http://localhost:8080/register", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -39,7 +39,7 @@ const Register = () => {
         <>
             <main>
                 <section className="sec-first">
-                    <img src="https://img.buzzfeed.com/buzzfeed-static/static/2022-05/6/11/campaign_images/9615c13b38f0/the-47-best-mother-son-movies-to-watch-on-mothers-2-1448-1651836261-30_dblbig.jpg?resize=1200:*" alt="" />
+                    <img src="https://img.freepik.com/free-vector/cinema-background-illustration_1284-13818.jpg?size=626&ext=jpg&ga=GA1.1.1784583415.1682756451&semt=robertav1_2_sidr" alt="" />
                     <div className='logo'>
                         <h1 >Tuner</h1>
                         <div >Enjoy Multiple videos at one place</div>

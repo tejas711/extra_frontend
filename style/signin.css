@@ -9,7 +9,7 @@ main{
 }
 img{
     width:100%;
-    height: 100vh;
+    height: inherit;
     opacity: 0.3;
    
 }
@@ -21,7 +21,7 @@ img{
 .sec-first h1{
     font-size: 105px;
     margin: 132px 0 0 50px;
-    color:#949ed6;;
+    color:red;
 }
 .sec-first div{
     font-size: 35px;
@@ -43,7 +43,7 @@ img{
     cursor: pointer;
 }
 .sec-second{
-    background-color: rgb(18, 18, 41);
+    background-color: #060c11;
     color: white;
     width: 40%;
     height: 100vh;
@@ -53,12 +53,11 @@ img{
     
     text-align: center;
 }
-.sec-second form{
-   
-   
-}
+
 .sec-second form h1{
     font-size: 45px;
+    color: powderblue;
+    text-transform: uppercase;
 }
 .sec-second form input{
     padding: 7px 1px;

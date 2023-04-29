@@ -9,6 +9,7 @@ import { getAnalytics } from "firebase/analytics";
 const firebaseConfig = {
   apiKey: "AIzaSyDXOL4nAUMgtAP1Bdn_CLr35Add6suyvDw",
   authDomain: "video-sharing-platform-3c855.firebaseapp.com",
+  databaseURL: "https://video-sharing-platform-3c855-default-rtdb.asia-southeast1.firebasedatabase.app",
   projectId: "video-sharing-platform-3c855",
   storageBucket: "video-sharing-platform-3c855.appspot.com",
   messagingSenderId: "343432031123",

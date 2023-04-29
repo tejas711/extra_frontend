@@ -10,7 +10,7 @@ const Search = ()=>{
   const query = useLocation().search;
     console.log(query)
     useEffect(() => {
-        axios.get(`https://backend-5.onrender.com/search${query}`)
+        axios.get(`http://localhost:8080/search${query}`)
             .then((res) => {
                 setVideos(res.data)
             }).catch((err) => {

@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 import "../style/myvideos.css";
 import Myvideocard from './Myvideocard';
 import Deletecard from './Deletecard';
-
+// https://backend-5.onrender.com
 function Myvideos() {
     const [data,setData] = useState([]);
     const [toggle,setToggle] = useState(false);
@@ -13,17 +13,16 @@ function Myvideos() {
     const [card,setCard] = useState("")
     useEffect(() => {
         const newToken = localStorage.getItem("mytoken")
-        axios.post("https://backend-5.onrender.com/myvideos",{newToken})
-            .then((res) => {
-                console.log(res)
-                setData(res.data)
-            }).catch((err) => {
-                console.log(err)
-                window.alert("something went wrong")
-
-            })
-    }, []);
-    console.log(data);
+        axios.post("http://localhost:8080/myvideos", { newToken })
+          .then((res) => {
+            console.log(res)
+            setData(res.data)
+          }).catch((err) => {
+            console.log(err.response.data)
+            window.alert("Something went wrong: " + err.response.data.message)
+          })
+      }, []);
+      
 
   return (
     <>

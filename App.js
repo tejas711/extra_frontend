@@ -4,6 +4,7 @@ import SingIn from './component/Signin';
 import Register from './component/Register';
 import Myvideos from './component/Myvideos';
 import Search from './component/Search';
+// import Upload from './component/Upload';
 
 function App() {
   return (<>
@@ -14,6 +15,8 @@ function App() {
       <Route path='/register' element={<Register/>}/>
       <Route path='/myvideos' element={<Myvideos/>}/>
       <Route path='/search' element={<Search/>}/>
+      {/* <Route path='/upload' element={<Upload/>}/> */}
+
     
 
     </Routes>

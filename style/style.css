@@ -19,7 +19,7 @@
    width:10vw;
    font-size: 30px;
    padding: 1%;
-   color: #80accf;
+   color: red;
    display: flex;
    margin-left: 2%;
    justify-content: center;
@@ -34,7 +34,7 @@
 }
 
 .heading:hover{
-    color: brown;
+    color:white;
 }
 
 .input {
